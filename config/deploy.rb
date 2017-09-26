@@ -42,4 +42,4 @@ set :linked_dirs, %w(log tmp/pids bundle public/assets)
 # after 'deploy:updated', 'deploy:cleanup_assets'
 # after 'deploy:updated', 'deploy:normalize_assets'
 # after 'deploy:reverted', 'deploy:rollback_assets'
-after 'deploy:updated', 'deploy:assets:precompile:if_changed'
+# after 'deploy:updated', 'deploy:assets:precompile:if_changed'
