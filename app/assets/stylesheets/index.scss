@@ -1,0 +1,245 @@
+@font-face {
+  font-family:'Avenir-Next';
+  font-weight:normal;
+  src: url(font-path('AvenirNext-Regular.eot'));
+  src: url(font-path('AvenirNext-Regular.eot')) format('embedded-opentype'), url(font-path('AvenirNext-Regular.woff2')) format('woff2'), url(font-path('AvenirNext-Regular.woff')) format('woff'), url(font-path('AvenirNext-Regular.ttf')) format('truetype'), url(font-path('AvenirNext-Regular.svg#AvenirRegular')) format('svg');
+}
+@font-face {
+  font-family:'Avenir-Next';
+  font-weight: 500;
+  src: url(font-path('AvenirNext-Medium.eot'));
+  src: url(font-path('AvenirNext-Medium.eot')) format('embedded-opentype'), url(font-path('AvenirNext-Medium.woff2')) format('woff2'), url(font-path('AvenirNext-Medium.woff')) format('woff'), url(font-path('AvenirNext-Medium.ttf')) format('truetype'), url(font-path('AvenirNext-Medium.svg#AvenirMedium')) format('svg');
+}
+
+@font-face {
+  font-family:'Avenir-Next';
+  font-weight:600;
+  src: url(font-path('AvenirNext-DemiBold.eot'));
+  src: url(font-path('AvenirNext-DemiBold.eot')) format('embedded-opentype'), url(font-path('AvenirNext-DemiBold.woff2')) format('woff2'), url(font-path('AvenirNext-DemiBold.woff')) format('woff'), url(font-path('AvenirNext-DemiBold.ttf')) format('truetype'), url(font-path('AvenirNext-DemiBold.svg#AvenirDemiBold')) format('svg');
+}
+
+@font-face {
+  font-family:'Avenir-Next';
+  font-weight:800;
+  src: url(font-path('AvenirNext-Bold.eot'));
+  src: url(font-path('AvenirNext-Bold.eot')) format('embedded-opentype'), url(font-path('AvenirNext-Bold.woff2')) format('woff2'), url(font-path('AvenirNext-Bold.woff')) format('woff'), url(font-path('AvenirNext-Bold.ttf')) format('truetype'), url(font-path('AvenirNext-Bold.svg#AvenirBold')) format('svg');
+}
+
+
+body {
+  font-family: 'Avenir Next', sans-serif;
+  color: #666;
+  background-color: #fff;
+
+}
+
+a{
+  color: #8D7AFF;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 200%;
+}
+
+h1 {
+  font-family: 'Avenir-Next', sans-serif;
+  font-size:2.2em;
+  font-weight:600;
+  color:#39C787;
+}
+
+h2
+
+{
+  font-size: .9em;
+  text-transform: uppercase;
+}
+
+img {
+  width: 250px
+}
+
+/* STRUCTURE */
+
+
+#pagewrap {
+  width: 960px;
+  margin: 1px auto;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 50px;
+  border-bottom: solid 1px #ccc;
+}
+
+
+#logo1{
+  width: 18%;
+  padding:0 55px;
+}
+
+#logo2{
+  width: 18%;
+  padding:10px 55px;
+}
+
+#left {
+  width: 283px;
+  float: left;
+  padding: 5px 15px;
+}
+
+#middle {
+  width: 283px; /* Account for margins + border values */
+  float: left;
+  padding: 5px 15px;
+  margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+  width: 283px;
+  padding: 5px 15px;
+  float: right;
+}
+
+.button {
+  font-family: 'Avenir-Next', sans-serif;
+  font-size:.8em;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid;
+  border-color: #E10650;
+  border-radius:4px;
+  color: #E10650;
+  background: #fff;
+  padding: 12px 50px;
+  letter-spacing:.025em;
+}
+
+.button:hover {
+  color:white;
+  background: #E10650;
+}
+.button:active {
+}
+.button:after {
+}
+
+
+.calltoaction {
+  border-bottom: solid 1px #ccc;
+
+}
+
+section {
+  clear: both;
+  padding: 3% 10%;
+  text-align: center;
+}
+
+
+footer p {
+
+  color: #858585;
+  font-size: .1em;
+  clear: both;
+  padding: 2% 10%;
+  text-align: center;
+}
+
+
+
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+  #pagewrap {
+    width: 94%;
+
+  }
+  #content{
+    max-width: 900px;
+    height: auto;
+  }
+
+  img{
+    width: 95.6%;
+  }
+  #left{
+    width: 24.6%;
+    padding: 1% 4%;
+
+  }
+  #middle {
+    width: 24.6%;
+    padding: 1% 4%;
+    margin: 0px 0px 5px 5px;
+    float: left;
+  }
+
+  #sidebar {
+    width: 24.6%;
+
+    padding: 1% 4%;
+
+    float: right;
+  }
+
+  header{
+    padding-bottom: 4%;
+  }
+  footer {
+    padding: 1% 4%;
+  }
+}
+
+#logo1{
+  width: 25%;
+  padding:0 45px;
+}
+
+#logo2{
+  width: 25%;
+  padding:10px 45px;
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+  #left{
+    width: auto;
+    float: none;
+  }
+
+  #middle {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+  }
+
+  #sidebar {
+    width: auto;
+    float: none;
+  }
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+  header {
+    height: auto;
+  }
+
+}
+
+
+header, #content, #left, #middle, #sidebar {
+  margin-bottom: 5px;
+}
+
+
+

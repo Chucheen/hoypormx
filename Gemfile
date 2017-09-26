@@ -45,3 +45,9 @@ group :development do
   gem 'spring'
 end
 
+group :development do
+  gem 'capistrano', '~> 3.8'
+  gem 'capistrano-rails'
+  gem 'capistrano-passenger'
+end
+
